@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
@@ -22,12 +22,6 @@
           <data:blog.title/>
         </title>
       </b:if>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-      <title>
-        Page Not Found ~
-        <data:blog.title/>
-      </title>
     </b:if>
     <b:if cond='data:blog.pageType == &quot;archive&quot;'>
       <meta content='noindex' name='robots'/>
@@ -3167,45 +3161,7 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML1' locked='false' title='Disqus for Desenfirman&apos;s Blog' type='HTML' visible='true'>
-                <b:includable id='main'>
-                  <script type='text/javascript'>
-                    var disqus_shortname = &#39;desenfirman&#39;;
-                    var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
-                    if (!disqus_blogger_current_url.length) {
-                      disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
-                    }
-                    var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
-                    var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
-                  </script>
-                  <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                    <style type='text/css'>
-                      #comments {display:none;}
-                    </style>
-                    <script type='text/javascript'>
-                      (function() {
-                        var bloggerjs = document.createElement(&#39;script&#39;);
-                                                               bloggerjs.type = &#39;text/javascript&#39;;
-                                                               bloggerjs.async = true;
-                                                               bloggerjs.src = &#39;http://&#39;+disqus_shortname+&#39;.disqus.com/blogger_item.js&#39;;
-                                                               (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
-                                                               })();
-                    </script>
-                  </b:if>
-                  <style type='text/css'>
-                    .post-comment-link { visibility: hidden; }
-                  </style>
-                  <script type='text/javascript'>
-                    (function() {
-                      var bloggerjs = document.createElement(&#39;script&#39;);
-                                                             bloggerjs.type = &#39;text/javascript&#39;;
-                                                             bloggerjs.async = true;
-                                                             bloggerjs.src = &#39;http://&#39;+disqus_shortname+&#39;.disqus.com/blogger_index.js&#39;;
-                                                             (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
-                                                             })();
-                  </script>
-                </b:includable>
-              </b:widget>
+              
             </b:section>
             <b:section class='main2 section' id='main2' maxwidgets='1' showaddelement='yes'/>
           </div>
